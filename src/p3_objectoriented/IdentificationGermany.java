@@ -14,4 +14,9 @@ public class IdentificationGermany extends Identification {
         // - then one or more uppercase letters or digits
         return getNumber().length() > 5 && getNumber().matches("[A-Z]{3}[.\\-][A-Z0-9]+");
     }
+
+    @Override
+    public String getIsoCode() {
+        return "DE";
+    }
 }

@@ -12,4 +12,9 @@ public class IdentificationNetherlands extends Identification {
         // - all digits
         return getNumber().length() == 8 && getNumber().matches("[0-9]+");
     }
+
+    @Override
+    public String getIsoCode() {
+        return "NL";
+    }
 }

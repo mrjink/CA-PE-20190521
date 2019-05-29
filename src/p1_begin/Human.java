@@ -9,6 +9,10 @@ public class Human {
     int age;
     List<Human> children;
 
+    public Human(String name) {
+        this(name, 0);
+    }
+
     public Human(String name, int age) {
         this.name = name;
         this.age = age;
@@ -38,6 +42,8 @@ public class Human {
         gillis.addChild(ziggy);
         gillis.addChild(yuna);
 
+        Human baby = new Human("Baby!");
+
         Human mathijs = new Human("Mathijs", 28);
         Human reinier = new Human("Reinier", 26);
         Human suzanne = new Human("Suzanne", 26);
@@ -59,7 +65,9 @@ public class Human {
 
     private static void printHumans(Human... humans) {
         for (Human human : humans) {
-            System.out.println(human);
+            if (human.age >= 28) {
+                System.out.println(human);
+            }
         }
     }
 }

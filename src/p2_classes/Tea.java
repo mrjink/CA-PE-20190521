@@ -9,6 +9,10 @@ public class Tea {
         this.caffeine = caffeine;
     }
 
+    public Tea(String name) {
+        this(name, 0);
+    }
+
     @Override
     public String toString() {
         return name + " (" + caffeine + "mg caffeine / 100ml)";

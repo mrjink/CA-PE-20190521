@@ -6,9 +6,9 @@ public class Application {
         // so we can assign them to Identification objects, here.
         Identification identification1 = new IdentificationGermany("ABC.203948ASFJH");
         Identification identification2 = new IdentificationGermany("XYA-LKJASD");
-        Identification identification3 = new IdentificationGermany("1234567");
+        Identification identification3 = new IdentificationGermany("12345678");
 
-        Identification identification4 = new IdentificationNetherlands("12340986");
+        Identification identification4 = new IdentificationNetherlands("12345678");
         Identification identification5 = new IdentificationNetherlands("123409");
         Identification identification6 = new IdentificationNetherlands("ASBCLKJS");
 
@@ -25,9 +25,9 @@ public class Application {
         // Identification!  That doesn't matter though, since it _is_ implemented in the subclasses, so we know it's
         // safe to use.
         if (identification.validate()) {
-            System.out.println(identification.getNumber() + " is valid");
+            System.out.println(identification.getNumber() + " is valid for " + identification.getIsoCode());
         } else {
-            System.out.println(identification.getNumber() + " is not valid");
+            System.out.println(identification.getNumber() + " is not valid for " + identification.getIsoCode());
         }
     }
 }

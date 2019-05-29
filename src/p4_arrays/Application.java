@@ -48,5 +48,6 @@ public class Application {
         System.out.println("boolean: " + Arrays.toString(new boolean[5]));
         System.out.println("char   : " + Arrays.toString(new char[5]));
         System.out.println("String : " + Arrays.toString(new String[5]));
+        System.out.println("Object : " + Arrays.toString(new Object[5]));
     }
 }

@@ -16,4 +16,6 @@ public abstract class Identification {
     }
 
     public abstract boolean validate();
+
+    public abstract String getIsoCode();
 }

@@ -4,7 +4,7 @@ public class Application {
     public static void main(String[] args) {
         Tea earlGrey = new Tea("Earl Grey", 12);
         Tea greenTea = new Tea("Green Tea", 5);
-        Tea rooibos = new Tea("Rooibos", 0);
+        Tea rooibos = new Tea("Rooibos");
 
         printTea(earlGrey, greenTea, rooibos);
 
